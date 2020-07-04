@@ -1,0 +1,78 @@
+
+html ::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+
+}
+
+
+
+
+.about{
+  margin-top: 2rem;
+  padding-bottom: 6rem;
+}
+.w3-container{
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 2em;
+  text-indent: -.7em;
+}
+
+li::before {
+  content: "• ";
+  color: teal; /* or whatever color you prefer */
+}
+
+.language .w3-light-grey{
+  margin-bottom: 1rem;
+}
+
+.content-profile{
+  margin-bottom: 2rem;
+
+}
+
+.footer-content{
+margin-top: 3rem;
+
+}
+
+.footer-content a{
+  margin-left: 1rem;
+
+
+}
+
+.footer-main{
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.achievements{
+  margin-bottom: 1rem;
+}
+
+.icon-footer{
+
+  color: white;
+}
+
+.icon-footer:hover{
+
+  color: red;
+}
+
+.w3-text-teal a{
+  color: teal;
+  text-decoration: none;
+  font-weight: bold;
+}
