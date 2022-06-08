@@ -12,6 +12,43 @@
 
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #008080;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
 </style>
 <body class="w3-light-grey">
 
@@ -33,13 +70,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container about">
-          <p><i class="fa fa-user-graduate fa-fw w3-margin-right w3-large w3-text-teal"></i>Founder at <b><a target="_blank" href="https://www.elynk.in/">Elynk.in</a></b></p>
+          <p><i class="fa fa-user-graduate fa-fw w3-margin-right w3-large w3-text-teal"></i>Student at Arizona State University <b></b></p>
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer | Solution Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>United States</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>United States of America</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>gauthamlg.6@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 6028152990</p>
           <p><i class="fas fa-plane-departure fa-fw w3-margin-right w3-large w3-text-teal "></i>Z3163209</p>
-          <p><a  style="color:white;text-decoration: none;" target="_blank"  href="https://drive.google.com/file/d/1hbZKUYQVXTYuL7PlI5IplSLlk84AgtRS/view?usp=sharing" download ><button class="btn btn-lg btn-block w3-teal">Download Resume</button> </a></p>
+          <p><a  style="color:white;text-decoration: none;" target="_blank"  href="https://drive.google.com/file/d/19yvW2IPOq0XQGYC_VjPOi51JY1etsqOv/view?usp=sharing" download ><button class="btn btn-lg btn-block w3-teal">Download Resume</button> </a></p>
 
           <hr>
 
@@ -96,9 +133,32 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Tata Consultancy Services | Software Developer</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - June 2021</h6>
-          <p>Worked as a professional RPA Developer in Tata Consultancy Services</p>
-          <p>Served as an expertise in Web Development for Tata Consultancy Services</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - June 2021</h6>
+          <br>
+          <div class="w3-white  ">
+            <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Presided as a Team lead, Software developer and Solution designer for Middle East and North America regions by engineering software applications and robotic software process automation systems. </span></b></button>
+          <div class="panel w3-card">
+            <br>
+            <p>	●	Incorporated PeopleConnect REST API to an existing large-scale distributed software called EricssonFinder, which promoted the growth of automation by 55% by utilizing Java and BluePrism for Ericsson.</p>
+<p>
+  ●	Designed a responsive web application for Qualcomm’s network team using HTML, NodeJS for generating invoices. Developed a scraping feature to extract text from unstructured invoices which helped in reducing human effort by 75%.
+</p>
+<p>
+  ●	Optimized Python scripts for Ericsson's Energy Infra team to eliminate scheduling frequency issues in production. Used by over 25+ teams which quadrupled growth in rapid deployments, resulted in generating revenue over 180M SEK.
+</p>
+<p>
+  ●	Implemented a document archiving application using Java to handle pdf documents as images that are indexed and categorized. Libraries used are Ghost4J to split and Tess4J to extract the text and stored using keywords. Optimized the time complexity by 33% by using HashMap and sets.
+</p>
+<p>
+  ●	Proposed the idea to develop an automated rewards coupon system utilizing AWS, MongoDB, NodeJS for every employee’s contribution towards One TATA Mission as being an integral part of Tata Innovista team.
+</p>
+<p>
+  ●	Engineered over 40 mission driven projects for Ericsson by following agile principles and set benchmarks in production by implementing error retry mechanisms and estimating ambiguous requirements for rolling out new versions.
+</p>
+
+          </div>
+          </div>
+          <br>
           <hr>
         </div>
         <div class="w3-container">
@@ -219,7 +279,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div  class="w3-container">
   <div class="w3-container w3-card w3-white w3-padding-16 ">
     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Internship</h2>
-<div class="content-profile">
+<!-- <div class="content-profile">
   <h5 class="w3-opacity" ><b>TCS Internship</b></h5>
   <h6>Document Archival using Java and Hadoop .</h6>
 
@@ -227,26 +287,136 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <div class="content-profile">
     <h5 class="w3-opacity"  > <b> Visakhapatnam Steel Plant </b> </h5>
     <h6>PLC Systems and Programming</h6>
+</div> -->
+
+<div class="w3-white  ">
+  <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">TATA Consultancy Services Internship</span></b></button>
+<div class="panel w3-card">
+  <br>
+  <p>	Selected as one among 770 students to secure an internship at TCS for developing a unique document archival project. </p>
+  <p>
+    Implemented a document archiving application using Java to handle pdf documents as images that are indexed and categorized. Libraries used are Ghost4J to split and Tess4J to extract the text and stored using keywords. Optimized the time complexity by 33% by using HashMap and sets.
+  </p>
 </div>
+</div>
+<br>
+<div class="w3-white ">
+  <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Visakhapatnam Steel Plant</span></b></button>
+<div class="panel w3-card">
+  <br>
+  <p>	Served as a Program coordinator for operating PLC systems </p>
+  <p>
+    Interacted with some of the best industry professionals and understood the domain of programming specially for hardware electric components. Optimized logic for obtaining extreme precession for dividing steel rods into half for every 15 seconds.
+  </p>
+</div>
+</div>
+<br>
 
 
 
 <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-tasks fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
 <div class="content-profile">
-  <h5 class="w3-opacity" ><b>Academic Project : Gitam University</b></h5>
-  <h6> Robotic android MEMS based controller using arduino chip set</h6>
+  <!-- <h5 class="w3-opacity" ><b>Academic Project : Gitam University</b></h5>
+  <h6> Robotic android MEMS based controller using arduino chip set</h6> -->
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Human Gesture Detection</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">May 2022</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>Engineered a real time android application using Java that makes use of camera and depth sensors to permit disabled people to interact and learn over 200 sign languages.  </p>
+    <p>
+      Enhanced the functionality by using PoseNet which was used to categorize multi set data points for detecting more than one human in a single frame.
+    </p>
+  </div>
+  </div>
+  <br>
+
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">ADAS CAN Data Prediction</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">March 2022</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>Fabricated a GUI based application utilizing Java, JavaFX, Swings, SQL that uses an interface and a parser to fetch sensor values from CAN Bus dataset for autonomous vehicle driving  </p>
+    <p>
+      Created a real-time Advanced Driver Assistant System predictive classifier to decode vehicle sensor values to forecast future curves by 33% ahead of time matching the exact GPS Coordinates and performed analysis on the frequency of distribution for all segments. </p>
+  </div>
+  </div>
+  <br>
+
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Elynk.in e-commerce site</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">Dec 2021</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>Developed an ecommerce platform using Full Stack, MongoDB with Node JS by engaging with multiple customers and designed process matrix to scale up the business. Extended the capabilities which can used to dynamically change the space for advertisements as and when needed </p>
+    <p>
+      Optimized with best measures with a page TBT response time less than 70ms and enhanced the productivity by incorporating incident management system with various priority levels (P1, P2, P3) which extends support to clients. </p>
+      <p>
+      Engineered a centralized admin monitoring system, which can be used to observe daily profits and dynamically change the deigns. Added additional capabilities for delivery executives which can be served as in real time for delivering orders to the customers.
+      </p>
+  </div>
+  </div>
+  <br>
+
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Social Networking Ads</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">Dec 2021</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>
+      Curated an ML model in an attempt to strategize an advertisement targeting based algorithm based on age groups.
+    </p>
+    <p>
+      Created an android app which tracks Human Touch Gesture patterns. Conducted research and compared the analysis with various other models like Random Forest and SVM, which speculated more usage of a Fling gestures during ads.
+      <p>
+  </div>
+  </div>
+  <br>
+
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Assignment Autograde</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">Nov 2021</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>
+      Designed an automated workflow to assemble all submissions by students using bash scripting. Verified each submission with plagiarism checker by automating and creating mapping to MS Excel.
+    </p>
+    <p>
+      Integrated OneDrive in VM and created folders for each student thereby notifying when their submission is processing.
+      <p>
+  </div>
+  </div>
+  <br>
+
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Sun Devil Pediatric Clinic</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">Oct 2021</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>
+      Devised a GUI based hospital management application by using Java, JavaFX and MySQL. Enhanced the application by adding a chat functionality to send priority messages to doctors upon scheduling appointment.
+    </p>
+
+  </div>
+  </div>
+  <br>
+
+  <div class="w3-white  ">
+    <button class="accordion w3-white  w3-card"><b><span class="w3-opacity">Maze Path finder</span></b><span class="w3-right">&nbsp&nbsp <b class="w3-opacity">Oct 2021</b></span></button>
+  <div class="panel w3-card">
+    <br>
+    <p>
+      Designed a game for creating hurdles in a maze and created an algorithm to travel through starting and ending points in C language. Enhanced the game by adding various hurdle levels and calibrated the accuracy by joining both ends.
+    </p>
+
+  </div>
+  </div>
+  <br>
 
 </div>
-  <div class="content-profile">
+  <!-- <div class="content-profile">
     <h5 class="w3-opacity"  > <b> Freelancing Projects :  </b> </h5>
     <ul class="w3-text-teal">
       <li><a target="_blank" href="https://fierce-tundra-24168.herokuapp.com/" >Weather Report Application</a></li>
       <li><a target="_blank" href="https://gautham-lg.github.io/OneSpace/" >OneSpace.Inc</a></li>
       <li><a target="_blank" href="https://www.elynk.in/" >Elynk Online Stores</a></li>
-<!--       <li><a target="_blank" href="https://sites.google.com/view/bright-pixel-studio/home">Bright Pixel Studio</a></li> -->
-      <!-- <li><a target="_blank" href="https://sites.google.com/view/veda-rakshanam">Veda Rakshanam</a></li> -->
+
 </ul>
-</div>
+</div> -->
 
 
 
@@ -331,6 +501,21 @@ Gautham L
   </div>
 
 </footer>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </body>
 </html>
